@@ -1,13 +1,27 @@
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <ContactWrapper id="Contact">
+    <ContactWrapper
+      id="Contact"
+      as={motion.section}
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <Title>Contacto</Title>
 
       <ContactList>
-        <ContactItem>
+        <ContactItem
+          as={motion.div}
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <Icon>
             <FaMapMarkerAlt />
           </Icon>
@@ -17,7 +31,13 @@ export default function Contact() {
           </Text>
         </ContactItem>
 
-        <ContactItem>
+        <ContactItem
+          as={motion.div}
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
           <Icon>
             <FaPhoneAlt />
           </Icon>
@@ -31,7 +51,13 @@ export default function Contact() {
           </div>
         </ContactItem>
 
-        <ContactItem>
+        <ContactItem
+          as={motion.div}
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <Icon>
             <FaEnvelope />
           </Icon>

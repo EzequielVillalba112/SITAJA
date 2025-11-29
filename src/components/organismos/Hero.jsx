@@ -2,16 +2,57 @@ import styled from "styled-components";
 import BgHero from "../../assets/hero.png";
 import { ImgContainer } from "../atomos/Img";
 import { Btn } from "../moleculas/Btn";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <HeroContainer id="Hero">
-      <ImgContainer src={BgHero} width="100%" height="500px" />
-      <div className="glass"></div>
-      <TitleHero>
+    <HeroContainer
+      id="Hero"
+      as={motion.section}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true, amount: 0.4 }}
+    >
+      {/* Imagen */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.05 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        style={{ width: "100%", height: "500px" }}
+      >
+        <ImgContainer src={BgHero} width="100%" height="500px" />
+      </motion.div>
+
+      {/* Glass Overlay */}
+      <motion.div
+        className="glass"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.1 }}
+        viewport={{ once: true }}
+      />
+
+      {/* Título */}
+      <TitleHero
+        as={motion.h2}
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         Defendiendo los derechos <br /> de los tareferos
       </TitleHero>
-      <BtnContainer>
+
+      {/* Botón */}
+      <BtnContainer
+        as={motion.div}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.35 }}
+        viewport={{ once: true }}
+      >
         <Btn text={"Contactanos"} url="#Contact" />
       </BtnContainer>
     </HeroContainer>
@@ -33,9 +74,10 @@ const HeroContainer = styled.section`
     position: absolute;
     width: 100%;
     height: 500px;
-    background: rgba(0, 0, 0, 0.726);
+    background: rgba(0, 0, 0, 0.72);
     z-index: 1;
     border-radius: 16px;
+    backdrop-filter: blur(2px);
   }
 `;
 

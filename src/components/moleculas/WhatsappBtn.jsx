@@ -4,7 +4,7 @@ import { ImgContainer } from "../atomos/Img";
 
 export const WhatsappBtn = () => {
   const sendWhatsApp = () => {
-    const numero = `+543743585057`; // quitamos el espacio para WhatsApp
+    const numero = `+543743554419`; // quitamos el espacio para WhatsApp
 
     const sendMessage = (mensaje) => {
       const url = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(
@@ -34,6 +34,7 @@ const BtnWhatsapp = styled.button`
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease;
+  z-index: 1000;
 
   &:hover {
     transform: scale(1.1);
