@@ -14,6 +14,7 @@ const Wrapper = styled.div`
   left: 0;
   width: 100%;
   pointer-events: none;
+  z-index: 10000;
 `;
 
 const DiagonalBanner = styled.div`
