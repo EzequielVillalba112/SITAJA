@@ -102,7 +102,7 @@ const LogoContainer = styled.div`
 
   h1 {
     color: #ffffff;
-    font-family: "MuseoModerno", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     letter-spacing: 1.5px;
   }

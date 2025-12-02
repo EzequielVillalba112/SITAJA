@@ -30,7 +30,7 @@ const ContainerFooter = styled.footer`
     margin: 0;
     font-size: 1.5rem;
     color: #ffffff;
-    font-family: "MuseoModerno", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   @media (max-width: 768px) {
@@ -38,6 +38,7 @@ const ContainerFooter = styled.footer`
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    text-align: center;
 
     h3{
       font-size: 1.1rem;

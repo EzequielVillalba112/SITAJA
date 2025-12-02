@@ -29,6 +29,11 @@ export default function Contact() {
             Calle Paraguay y Av. 9 de Julio – Ciudad de Jardín América -
             Misiones
           </Text>
+          <br/>
+          <Text>
+            <Bold>Domicilio legal:</Bold> Calle Atuel S/N Barrio Capilla Dos - Ciudad de
+            Jardín América - Misiones.
+          </Text>
         </ContactItem>
 
         <ContactItem
@@ -95,6 +100,7 @@ const ContactList = styled.div`
 
 const ContactItem = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #fff;

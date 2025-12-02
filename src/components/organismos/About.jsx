@@ -55,7 +55,7 @@ export const About = () => {
 
           <p>
             Nuestro compromiso es estar presentes en cada reclamo, cada trámite
-            y cada lucha colectiva. Brindamos asesoramiento, contención y
+            y cada lucha colectiva. Brindamos asesoramiento, y
             acompañamiento frente a situaciones de explotación, falta de pago,
             irregularidades laborales y cualquier vulneración de derechos.
           </p>
