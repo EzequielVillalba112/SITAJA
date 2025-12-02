@@ -6,10 +6,6 @@ import {
   FaHandshake,
 } from "react-icons/fa";
 
-// ORDEN NUEVO:
-// 1) Reclamos Individuales y Colectivos
-// ...
-// Último: Asesoría Jurídica
 export const servicios = [
   {
     icon: <FaUsers />,
@@ -31,16 +27,9 @@ export const servicios = [
 
   {
     icon: <FaHandshake />,
-    titulo: "Acompañamiento a Contratistas",
-    desc: "Mediación y acompañamiento para garantizar acuerdos justos.",
+    titulo: "Vinculaciones con actores de la cadena yerba mate",
+    desc: "Mediación, acompañamiento y construcción de acuerdos con diversos actores de la cadena yerbatera para promover relaciones laborales justas.",
   },
-
-  // Ayuda Social — por pedido NO debe aparecer
-  // {
-  //   icon: <FaHandsHelping />,
-  //   titulo: "Ayuda Social",
-  //   desc: "Apoyo comunitario, asistencia familiar y acompañamiento en situaciones urgentes.",
-  // },
 
   {
     icon: <FaBalanceScale />,
