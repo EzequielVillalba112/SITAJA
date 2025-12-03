@@ -6,14 +6,14 @@ export const Footer = () => {
   return (
     <ContainerFooter>
       <h3>© 2026 SITAJA. Todos los derechos reservados.</h3>
-      <SocialContainer>
+      {/* <SocialContainer>
         <a href="#">
           <FaFacebook />
         </a>
         <a href="#">
           <FaInstagram />
         </a>
-      </SocialContainer>
+      </SocialContainer> */}
     </ContainerFooter>
   );
 };

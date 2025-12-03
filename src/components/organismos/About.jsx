@@ -62,7 +62,7 @@ export const About = () => {
         </motion.div>
 
         {/* IMAGEN */}
-        <motion.div
+        {/* <motion.div
           className="img-container"
           initial={{ opacity: 0, x: 60 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -70,7 +70,7 @@ export const About = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <ImgContainer src={BgAbout} width="100%" alt="About us" />
-        </motion.div>
+        </motion.div> */}
       </ContainerDataAbout>
     </AboutContainer>
   );
