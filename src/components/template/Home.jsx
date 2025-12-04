@@ -1,5 +1,4 @@
 import { itemsMenu } from "../../utils/Items-menu";
-import Demo from "../atomos/Demo";
 import { WhatsappBtn } from "../moleculas/WhatsappBtn";
 import { About } from "../organismos/About";
 import Contact from "../organismos/Contact";
@@ -20,7 +19,7 @@ export const Home = () => {
       <Contact />
       <Footer />
       <WhatsappBtn/>
-      <Demo/>
+     
     </>
   );
 };
